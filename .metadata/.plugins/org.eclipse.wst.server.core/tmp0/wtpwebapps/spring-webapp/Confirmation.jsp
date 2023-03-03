@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+h1 {
+	font-family: Arial, sans-serif;
+	font-size: 32px;
+	color: #4CAF50;
+	text-align: center;
+	margin-top: 50px;
+}
+</style>
+</head>
+<body>
+	<h1>Registration Successfully</h1>
+	<h1>Your Id is :  ${ custId }</h1>
+</body>
+</html>

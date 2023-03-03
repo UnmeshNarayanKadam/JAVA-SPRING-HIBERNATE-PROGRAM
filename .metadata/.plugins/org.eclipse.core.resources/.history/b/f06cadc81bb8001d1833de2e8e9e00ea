@@ -1,0 +1,9 @@
+package com.pratiti.model;
+
+public class RegistrationStatus {
+	private boolean status;
+	private String message;
+	private int registeredCustomerId;
+	
+	
+}

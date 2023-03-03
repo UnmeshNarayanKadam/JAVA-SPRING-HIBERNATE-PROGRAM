@@ -1,0 +1,9 @@
+package com.pratiti.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.pratiti.component.CarPart;
+
+public class CustomerRepository extends CrudRepository<CarPart, Integer>{
+	
+}

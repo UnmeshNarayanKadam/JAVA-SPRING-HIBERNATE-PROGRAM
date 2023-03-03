@@ -1,0 +1,11 @@
+package com.pratiti.component;
+
+import org.springframework.data.repository.CrudRepository;
+
+//There are two parameter 1)name of the class 2) datatype of the primary key 
+public interface CarPartsInventoryRepository extends CrudRepository<CarPart, Integer> {
+	public Iterable<CarPart> findByCarModel(String model);
+	public Iterable<CarPart> findByPrice(Double p);
+	
+	public Iterable<CarPart> findByQuentity(Integer q);
+}

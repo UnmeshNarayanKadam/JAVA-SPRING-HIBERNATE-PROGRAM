@@ -1,0 +1,10 @@
+package com.pratiti.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class PnrController {
+	public p checkStatus(int pnrNo) {
+		
+	}
+}

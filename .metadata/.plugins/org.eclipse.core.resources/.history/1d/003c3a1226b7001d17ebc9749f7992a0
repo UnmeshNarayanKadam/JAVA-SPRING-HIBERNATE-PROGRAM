@@ -1,0 +1,12 @@
+package com.pratiti.model;
+
+import java.time.LocalDate;
+import java.util.List;
+
+public class Pnr {
+	private int pnrNo;
+	private int trainNo;
+	private LocalDate travelDate;
+	
+	private List<Passenger>passenger;
+}

@@ -1,0 +1,5 @@
+package com.pratiti.repository;
+
+public class ProductRepository {
+
+}

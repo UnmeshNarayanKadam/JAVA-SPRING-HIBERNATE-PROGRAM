@@ -1,0 +1,21 @@
+package com.pratiti.model;
+
+public class LoginData {
+	
+	private String email;
+	private String passward;
+	
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getPasswaord() {
+		return passwaord;
+	}
+	public void setPasswaord(String passwaord) {
+		this.passwaord = passwaord;
+	}
+	
+}

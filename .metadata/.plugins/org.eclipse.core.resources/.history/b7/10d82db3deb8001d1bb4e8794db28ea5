@@ -1,0 +1,18 @@
+package com.pratiti.model;
+
+import java.time.LocalDate;
+
+import com.pratiti.entity.Address;
+
+public class CustomerData {
+	
+	private String name;
+	private LocalDate dateOfBirth;
+	private String email;
+	private String password;
+	
+	//for profile pic
+	private m
+	
+	private Address address;
+}

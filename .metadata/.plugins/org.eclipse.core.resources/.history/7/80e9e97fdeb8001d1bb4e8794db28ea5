@@ -1,0 +1,6 @@
+package com.pratiti.model;
+
+public class CustomerData {
+	private String name;
+	private String 
+}

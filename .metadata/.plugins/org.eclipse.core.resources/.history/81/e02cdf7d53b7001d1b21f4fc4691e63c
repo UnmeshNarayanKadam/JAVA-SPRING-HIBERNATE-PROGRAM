@@ -1,0 +1,16 @@
+package com.pratiti.entity;
+
+import java.time.LocalDate;
+
+public class Customer {
+	private int id;
+	private String name;
+	private LocalDate dateOfBirth;
+	private String profilePic;
+	private String email;
+	private String password;
+	private Status status;
+	public static enum Status{
+		ACTIVE,INACTIVE,LOCKED;
+	}
+}

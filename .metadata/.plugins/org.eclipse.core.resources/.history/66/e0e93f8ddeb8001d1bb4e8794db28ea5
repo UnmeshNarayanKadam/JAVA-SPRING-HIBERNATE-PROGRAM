@@ -1,0 +1,10 @@
+package com.pratiti.model;
+
+import java.time.LocalDate;
+
+public class CustomerData {
+	private String name;
+	private LocalDate 
+	private String email;
+	private String password;
+}

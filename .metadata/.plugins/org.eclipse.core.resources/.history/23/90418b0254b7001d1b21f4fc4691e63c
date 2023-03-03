@@ -1,0 +1,10 @@
+package com.pratiti.entity;
+
+public class Address {
+	private int id;
+	private int pincode;
+	private String city;
+	private String state;
+	
+	private Customer customer;
+}

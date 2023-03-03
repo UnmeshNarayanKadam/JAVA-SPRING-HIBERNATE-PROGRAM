@@ -1,0 +1,8 @@
+package com.pratiti.model;
+
+public class LoginStatus {\
+	private boolean status;
+	private int id;
+	private String name;
+	
+}

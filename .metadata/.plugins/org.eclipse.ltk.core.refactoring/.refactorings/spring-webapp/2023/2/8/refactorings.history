@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.pratiti.training&apos; to &apos;com.pratiti.controller&apos;&#x0D;&#x0A;- Original project: &apos;spring-webapp&apos;&#x0D;&#x0A;- Original element: &apos;spring-webapp/src/main/java/com.pratiti.training&apos;&#x0D;&#x0A;- Renamed element: &apos;spring-webapp/src/main/java/com.pratiti.controller&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.pratiti.training&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.pratiti.training" name="com.pratiti.controller" qualified="false" references="true" stamp="1677235685058" textual="false" version="1.0"/>
+</session>

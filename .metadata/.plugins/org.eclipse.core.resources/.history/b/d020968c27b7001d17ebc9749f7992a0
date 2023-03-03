@@ -1,0 +1,30 @@
+package com.pratiti.controller;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.pratiti.controller.model.Pnr;
+import com.pratiti.model.Passenger;
+import com.pratiti.model.Passenger.Gender;
+import com.pratiti.model.Passenger.Status;
+
+@RestController
+public class PnrController {
+	public Pnr checkStatus(int pnrNo) {
+		com.pratiti.model.Pnr pnr = new Pnr();
+		pnr.setPnrNo(pnrNo);
+		pnr.setTrainNo(12345);
+		pnr.setTravelDate(LocalDate.of(2023, 3, 10));
+		
+		List<Passenger>passengers;
+		
+		Passenger passenger1 = new Passenger();
+		passenger1.setName("Harry");
+		passenger1.setGender(Gender.MALE);
+		passenger1.setStatus(Status.RAC);
+		passengers.add(passenger1)
+		return pnr;
+	}
+}

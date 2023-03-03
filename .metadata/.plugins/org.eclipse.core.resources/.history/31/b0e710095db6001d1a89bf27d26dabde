@@ -1,0 +1,9 @@
+package com.pratiti.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.pratiti.entity.Customer;
+
+public interface CustomerRepository extends J<Customer, Integer>{
+	
+}

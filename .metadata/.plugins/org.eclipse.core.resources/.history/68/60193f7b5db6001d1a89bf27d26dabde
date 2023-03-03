@@ -1,0 +1,11 @@
+package com.pratiti.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.pratiti.entity.Customer;
+
+//Difference between JpaRepository and CrudRepository -
+//return type of CrudRepository is iterable an
+public interface CustomerRepository extends JpaRepository<Customer, Integer>{
+	
+}

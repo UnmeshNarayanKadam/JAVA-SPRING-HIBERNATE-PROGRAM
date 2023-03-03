@@ -1,0 +1,10 @@
+package com.pratiti.model;
+
+public class LoginData {
+	
+	private String email;
+	private String passward;
+	
+	
+	
+}

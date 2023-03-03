@@ -1,0 +1,11 @@
+package com.pratiti.exception;
+
+
+class CustomerServiceException extends Exception {
+
+
+
+    public CustomerServiceException(String message) {
+        super(message);
+    }
+}

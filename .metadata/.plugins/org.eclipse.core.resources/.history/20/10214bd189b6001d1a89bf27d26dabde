@@ -1,0 +1,87 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.mainDiv {
+	width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #ccc;
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	font-family: Arial, sans-serif;
+	font-size: 32px;
+	color: #4CAF50;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+input {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+}
+
+button[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	margin-top: 10px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+button[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+</style>
+
+</head>
+<body>
+	<div class="mainDiv">
+		<h1>Search the customer</h1>
+		<form action="search-customer">
+			Enter the Email address : <input name="email" /><br>
+			<button type="submit">Search</button>
+		</form>
+		<h1>OR</h1>
+		<form action="fetch-all-customer">
+			<button type="submit">Fetch all customer</button>
+		</form>
+
+		<c:if test="${ c!=null }">
+			<p>------------------------------------Search
+				Result------------------------------------</p>
+			<p>
+				Customer Id : ${ c.id } <br /> Customer Name : ${ c.name } <br />
+				Customer Email : ${ c.email } <br /> Customer City : ${ c.city }
+			</p>
+		</c:if>
+		
+		<c:forEach items=${ listOfCustomer }>
+		
+		</c:forEach>
+
+
+	</div>
+</body>
+</html>

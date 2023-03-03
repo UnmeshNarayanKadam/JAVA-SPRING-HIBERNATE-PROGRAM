@@ -1,0 +1,10 @@
+package com.pratiti.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.pratiti.entity.Customer;
+
+//Difference b
+public interface CustomerRepository extends JpaRepository<Customer, Integer>{
+	
+}

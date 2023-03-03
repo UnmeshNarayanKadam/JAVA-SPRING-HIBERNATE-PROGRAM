@@ -1,0 +1,15 @@
+package com.pratiti.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.pratiti.component.CarPart;
+import com.pratiti.entity.Customer;
+
+//Difference between JpaRepository and CrudRepository -
+//return type of CrudRepository is iterable and
+//return typr of JpaRepository is list
+public interface CustomerRepository extends JpaRepository<Customer, Integer>{
+	@Query("select c from  c where c.quantity=?1 and c.price=?2")
+	public Iterable<CarPart> fetchByQuantity(Integer q,Double p);
+}
